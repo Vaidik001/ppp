@@ -1,0 +1,19 @@
+<html>
+    <title>my exmple</title>
+    <style>
+        p{
+            background: goldenrod;
+            padding: 20px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#togglecontent").click(function () {
+                $("p").toggle();
+            });
+        });
+        </Script>
+        <button id="togglecontent">toggle</button>
+        <p>toggle me !</p>
+</html>
