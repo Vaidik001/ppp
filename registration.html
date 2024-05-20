@@ -1,0 +1,70 @@
+
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+   <link rel="stylesheet" href="day2.css">
+   <script src="validate.js"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+ <body>
+    <div class = 'container'>
+      <div class ="title">Registration</div>
+        <div class="content">
+            <form action = "#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">full name</span>
+                        <input type="text" placeholder="enter your name"  id="name" />
+                
+                    </div>
+                    <div class="input-box">
+                    <span class="details">username</span>
+                    <input type="text" placeholder="enter your username" />
+                    </div>
+                    <div class="input-box">
+                    <span class="details">email</span>
+                    <input type="text" placeholder="enter your email" />
+                    </div>
+                     <div class="input-box">
+                    <span class="details">phone number</span>
+                    <input type="text" placeholder="enter your number" id="contact" />
+                    <span id="errl" style="color: red"></span>
+                    </div>
+                    <div class="input-box">
+                    <span class="details">password</span>
+                    <input type="text" placeholder="enter your password"  id="pwd" />
+                    <span id="pwderr" style="color: red"></span>
+                    </div>
+                <div class="input-box">
+                    <span class="details">confirm password</span>
+                    <input type="text" placeholder="enter your password"  id="cpwd" />
+                    <span id="cpwderr" style="color: red"></span>
+                </div>
+         </div>
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <input type="radio" name="gender" id="dot-3">
+                    <span class="gender-title">gender</span>
+                    <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span> 
+                        <span class="gender">male</span>
+                    </label>   
+                        <label for="dot-2">
+                            <span class="dot two"></span> 
+                            <span class="gender">female</span>
+                        </label> 
+
+
+                </div>
+    </div>
+    <div class="button">
+        <input type="submit" value="register" onclick="validate()">
+    </div>
+            </form>
+            </div>
+    </div>
+ </body>
+<html>
