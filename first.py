@@ -1,28 +1,42 @@
+# Write a c program to create a student's mark sheet and calculate total & percentage
+#Create a student's mark sheet and find grades according to percentage
 #print("hello world")
 
 #a=10;
 #b=20;
-#print("enter subject marks out of 100")
-#a=float(input("enter java marks:"))
-#b=float(input("enter dbms marks:"))
-#c=float(input("enter python marks:"))
-#print("java=",a)
-#print("dbms=",b)
-#print("python=",c)
-#total=a+b+c
-#print("total marks=",total)
-#par=int(total*100/300)
-#print("par=","%",par)
 
-a=int(input("enter no1:"))
-b=int(input("enter no2:"))
-c=int(input("enter no3:"))
+#value enter    
+print("enter subject marks out of 100")
+a=float(input("enter java marks:"))
+b=float(input("enter dbms marks:"))
+c=float(input("enter python marks:"))
 
-if(a>b and a>c):
-    print("a is greater")
+#display value
+print("java=",a)
+print("dbms=",b)
+print("python=",c)
 
-    elif b>c
-    print("b is greter")
+#totle value
+total=a+b+c
+print("total marks=",total)
 
-    if a>c
-    print("c is greater")
+#total par
+par=int(total*100/300)
+print("par=",par,"%")
+
+def g(par):
+    if par >= 90:
+        return 'A'
+    elif par >= 80:
+        return 'B'
+    elif par >= 70:
+        return 'C'
+    elif par >= 60:
+        return 'D'
+    elif par >= 50:
+        return 'E'
+    else:
+        return 'fail'
+grade = g(par)
+print("grade=",grade)
+
